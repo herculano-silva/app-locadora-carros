@@ -19,12 +19,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 // apiResource não terá Create e Edit
-Route::apiResource('cliente','App\Http\controllers\ClienteController');
+Route::apiResource('cliente','ClienteController');
 
-Route::apiResource('carro','App\Http\controllers\CarroController');
+Route::apiResource('carro','CarroController');
 
-Route::apiResource('locacao','App\Http\controllers\LocacaoController');
+Route::apiResource('locacao','LocacaoController');
 
-Route::apiResource('marca','App\Http\controllers\MarcaController');
+Route::apiResource('marca','MarcaController');
 
-Route::apiResource('modelo','App\Http\controllers\ModeloController');
+Route::apiResource('modelo','ModeloController');
